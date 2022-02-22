@@ -1,0 +1,23 @@
+{
+    "name": "picture-perfect-framing-shop",
+    "version": "1.0.0",
+    "description": "Website for Picture Perfect Frame Shop",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npm run lite",
+        "lite": "lite-server"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "author": "Ivaylo Aleksiev",
+    "license": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.5.4"
+    },
+    "dependencies": {
+        "debug": "^4.3.1",
+        "engine.io": "^4.0.0"
+    }
+}
