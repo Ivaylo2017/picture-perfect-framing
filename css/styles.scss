@@ -1,0 +1,38 @@
+$light-green: rgb(204, 235, 197);
+$mid-green: rgb(162, 223, 148);
+$dark-green:rgb(124, 223, 101);
+
+body {
+    font-family: "Bebas Neue", "sans-serif";
+    background-color: $light-green;
+}
+
+h1, h2 {
+    color: black;
+}
+
+h1, h2, h3 {
+    font-family: "Bebas Neue", "sans-serif";
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 3rem;
+    background-image: linear-gradient(to left, $light-green, $mid-green , $dark-green);
+    text-align: center;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px; }
+
+img {
+    width: auto;
+    max-height: 5rem;
+}
+
+.site-footer {
+    background-image: linear-gradient(to left, $light-green, $mid-green, $dark-green );
+    padding: 20px 0;
+}

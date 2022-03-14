@@ -1,24 +1,22 @@
 body {
-    font-family: "Bebas Neue", "sans-serif";
-}
+  font-family: "Bebas Neue", "sans-serif";
+  background-color: #ccebc5; }
 
 h1, h2 {
-    color: black;
-}
+  color: black; }
 
 h1, h2, h3 {
-    font-family: "Bebas Neue", "sans-serif";
-}
+  font-family: "Bebas Neue", "sans-serif"; }
+
 .jumbotron {
-    margin: 0;
-    padding: 3rem;
-    color: white;
-    background-image: linear-gradient(to left, rgb(204, 235, 197), rgb(162, 223, 148), rgb(124, 223, 101));
-    text-align: center;
-}
+  margin: 0;
+  padding: 3rem;
+  background-image: linear-gradient(to left, #ccebc5, #a2df94, #7cdf65);
+  text-align: center; }
 
 .site-footer {
-    background-image: linear-gradient(to left, rgb(204, 235, 197), rgb(162, 223, 148), rgb(124, 223, 101) );
-    padding: 20px 0;
-    text-align: center;
-}
+  background-image: linear-gradient(to left, #ccebc5, #a2df94, #7cdf65);
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  justify-content: center; }
