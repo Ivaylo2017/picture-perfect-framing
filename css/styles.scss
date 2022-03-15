@@ -3,7 +3,8 @@ $mid-green: rgb(162, 223, 148);
 $dark-green:rgb(124, 223, 101);
 
 body {
-    font-family: "Bebas Neue", "sans-serif";
+    font-family: "Bebas Neue", "serif";
+    font-weight: 200;
     background-color: $light-green;
 }
 
@@ -11,8 +12,14 @@ h1, h2 {
     color: black;
 }
 
-h1, h2, h3 {
-    font-family: "Bebas Neue", "sans-serif";
+p, a {
+    vertical-align: auto;
+}
+
+.intro {
+    font-family: "Tangerine", serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
 }
 
 .jumbotron {
@@ -23,16 +30,18 @@ h1, h2, h3 {
 }
 
 .row-content {
-    padding: 50px 0;
+    padding: 10px 0;
     border-bottom: 1px ridge;
     min-height: 200px; }
 
 img {
     width: auto;
-    max-height: 5rem;
+    height: 75px;
 }
 
 .site-footer {
     background-image: linear-gradient(to left, $light-green, $mid-green, $dark-green );
     padding: 20px 0;
+    justify-content: center;
 }
+

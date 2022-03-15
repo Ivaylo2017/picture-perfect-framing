@@ -8,11 +8,11 @@
         "start": "npm run watch:all",
         "lite": "lite-server",
         "scss": "node-sass -o css/ css/",
+        "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite --port=3000\"",
         "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
         "imagemin": "imagemin img/* -o dist/img",
         "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin blog.html -d dist --htmlmin -o dist/blog.html && usemin faqs.html -d dist --htmlmin -o dist/faqs.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin order.html -d dist --htmlmin -o dist/order.html && usemin reviews.html -d dist --htmlmin -o dist/reviews.html && usemin services.html -d dist --htmlmin -o dist/services.html",
-        "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-        "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite --port=3000\"",
         "clean": "rimraf dist",
         "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
     },
@@ -25,6 +25,7 @@
         "copyfiles": "^2.2.0",
         "lite-server": "^2.6.1",
         "node-sass": "^7.0.1",
+        "onchange": "^7.0.0",
         "parallelshell": "^3.0.1",
         "rimraf": "^3.0.2",
         "usemin-cli": "^0.6.0"
@@ -35,9 +36,9 @@
         "bootstrap-social": "^5.1.1",
         "debug": "^4.3.1",
         "engine.io": "^4.0.0",
+        "fontawesome": "^4.7.0",
         "jquery": "^3.5.1",
         "popper.js": "^1.16.1",
-        "fontawesome": "^4.7.0",
         "uuid": "^7.0.3"
     }
 }
