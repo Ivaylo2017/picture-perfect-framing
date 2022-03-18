@@ -54,53 +54,107 @@
         </div>
     </nav>
 
+    <div class="row row-content px-1 mx-auto d-block">
+        <div class="col-12">
+            <h2>Send us your Feedback</h2>
+            <hr>
+        </div>
+        <div class="col-md-10">
+            <form>
+                <div class="form-group row">
+                    <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                    </div>
+                    <div class="col-7">
+                        <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col offset-md-2">
+                        May we contact you?
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                            <label for="contactYes" class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                            <label for="contactNo" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-2 col-md-10">
+                        <button class="btn btn-primary" type="submit">Send Feedback</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+   </div>
+
+    <footer class="site-footer">
     <div class="container">
         <div class="row">
-            <div class="col">
-                Future Home of Picture Perfect Frames
+            <div class="col-4 sol-sm-2 text-center">
+                <h3>Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-sm-5 text-center">
+                <h3>Social</h3>
+                <a role="button" class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><span
+                        class="fa-brands fa-instagram"></span></a>
+                <a role="button" class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><span
+                        class="fa-brands fa-facebook"></span></a>
+                <a role="button" class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span
+                        class="fa-brands fa-twitter"></span></a>
+                <a role="button" class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><span
+                        class="fa-brands fa-youtube-square"></span></a>
+            </div>
+
+            <div class="col-sm-2 text-center">
+                <h3>Contact</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#">Nearest location</a></li>
+                    <li>Phone: 1800-FRAMING</li>
+                    <li>Email: PicturePerfectFraming@yahoo.com</li>
+                </ul>
             </div>
         </div>
     </div>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <h3>Links</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">Home</a></li>
-                    </ul>
-                </div>
-
-                <div class="col text-center">
-                    <h3>Social</h3>
-                    <a role="button" class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><span
-                            class="fa fa-instagram"></span></a>
-                    <a role="button" class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><span
-                            class="fa fa-facebook"></span></a>
-                    <a role="button" class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span
-                            class="fa fa-twitter"></span></a>
-                    <a role="button" class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><span
-                            class="fa fa-youtube"></span></a>
-                </div>
-
-                <div class="col text-center">
-                    <h3>Contact</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Nearest location</a></li>
-                        <li>Phone: 1800-FRAMING</li>
-                        <li>Email: PicturePerfectFraming@yahoo.com</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/umd/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
